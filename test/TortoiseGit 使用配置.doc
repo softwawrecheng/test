@@ -1,0 +1,83 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40"><b>TortoiseGit 使用配置</b><br><br><div class="iteye-blog-content-contain">
+<p class="MsoListParagraph" style="font-size: 14px;">Git快速使用指南（前提是安装TortoiseGit，git bash）</p>
+<p class="MsoNormal">  1.创建私钥，使用TortoiseGit进行操作</p>
+<p class="MsoNormal">   使用 <a href="http://code.google.com/p/tortoisegit/">TortoiseGit</a> 提供的 <strong>PuttyGen</strong>。</p>
+<p class="MsoNormal">   此工具位于TortoiseGit的安装路径的bin目录下</p>
+<p class="MsoNormal">   例如： D:\Program Files\TortoiseGit\bin</p>
+<p class="MsoNormal"> </p>
+<p class="MsoNormal">   第一次运行时，点Generate生成密钥对。 已生成过时可直接点Load加载。</p>
+<p class="MsoListParagraph" style="font-size: 14px;"><br><img alt="" src="http://dl.iteye.com/upload/attachment/0084/5241/640026d9-8136-3d75-923a-93b42f8afa48.jpg"></p>
+<p class="MsoListParagraph" style="font-size: 14px;">二、点击Save private key , 指定一个位置保存私钥</p>
+<p class="MsoListParagraph" style="font-size: 14px;">需要将文件保存成.ppk文件，点上图中的保存公钥和私钥，此时会生.ppk的文件<br> <br><img alt="" src="http://dl.iteye.com/upload/attachment/0084/5243/99e41d27-7aef-3cbd-99e3-b4015aade418.jpg"><br>输入框中的内容可以先拷贝下来，后面在GIT网站上加SSH key时要用到。 </p>
+<p class="MsoListParagraph" style="font-size: 14px;"> </p>
+<p class="MsoNormal">三、 添加私钥管理</p>
+<p class="MsoNormal"> </p>
+<p class="MsoNormal">使用 <a style="font-size: 12px; line-height: 1.5;" href="http://code.google.com/p/tortoisegit/">TortoiseGit</a> 提供的Pageant，打开后，</p>
+<p class="MsoNormal">点击Add key，添加上面保存的private key</p>
+<p class="MsoNormal"><br><br><img alt="" src="http://dl.iteye.com/upload/attachment/0084/5403/b7eed7ba-79ee-31bf-9aaf-c8adae044e45.jpg"><br> <br> 添加后点close即可。</p>
+<p class="MsoNormal"> </p>
+<p style="font-size: 14px;"> </p>
+<p style="font-size: 14px;">四、    在gitlab上添加ssh</p>
+<p class="MsoNormal"> </p>
+<p class="MsoNormal">    复制上面图中文本框的key, 在网站上进入SSH key的管理页， 点击Add new按钮 添加新的ssh，然后把刚复制的key放进去Key对应的文本框，</p>
+<p class="MsoNormal">Titles自定义个名字就行，然后保存。</p>
+<p class="MsoNormal"><br><img alt="" src="http://dl.iteye.com/upload/attachment/0084/5397/c16ef51c-d034-349f-9720-d17463d64e4f.jpg"><br> </p>
+<p style="font-size: 14px;"> </p>
+<p class="MsoListParagraph" style="margin-left: 21.0pt; text-indent: 0cm;">五、配置TortoiseGit，如下所示：</p>
+<p class="MsoListParagraph" style="margin-left: 21.0pt; text-indent: 0cm;">URL中输入你的SSH的GIT代码， putty中输入你的ppk文件路径。</p>
+<p class="MsoListParagraph" style="margin-left: 21.0pt; text-indent: 0cm;"> </p>
+<p class="MsoListParagraph" style="margin-left: 21.0pt; text-indent: 0cm;"><img alt="" src="http://dl.iteye.com/upload/attachment/0084/5213/52078ec8-f1cb-391d-9853-39266312d795.jpg"></p>
+<p class="MsoListParagraph" style="margin-left: 21.0pt; text-indent: 0cm;"> </p>
+<p class="MsoListParagraph" style="margin-left: 21.0pt; text-indent: 0cm;">参考：<a href="http://www.360ito.com/article/305.html">http://www.360ito.com/article/305.html</a></p>
+</div>
+  </div>
+
+  
+  <div class="attachments">
+    
+      
+        <ul style="display:none;">
+          <li><a href="http://dl.iteye.com/upload/attachment/0084/5213/52078ec8-f1cb-391d-9853-39266312d795.jpg" target="_blank"><img src='http://dl.iteye.com/upload/attachment/0084/5213/52078ec8-f1cb-391d-9853-39266312d795-thumb.jpg' class='magplus' title='点击查看原始大小图片' /></a></li>
+          
+          <li>大小: 70.2 KB</li>
+        </ul>
+      
+    
+      
+        <ul style="display:none;">
+          <li><a href="http://dl.iteye.com/upload/attachment/0084/5241/640026d9-8136-3d75-923a-93b42f8afa48.jpg" target="_blank"><img src='http://dl.iteye.com/upload/attachment/0084/5241/640026d9-8136-3d75-923a-93b42f8afa48-thumb.jpg' class='magplus' title='点击查看原始大小图片' /></a></li>
+          
+          <li>大小: 81.6 KB</li>
+        </ul>
+      
+    
+      
+        <ul style="display:none;">
+          <li><a href="http://dl.iteye.com/upload/attachment/0084/5243/99e41d27-7aef-3cbd-99e3-b4015aade418.jpg" target="_blank"><img src='http://dl.iteye.com/upload/attachment/0084/5243/99e41d27-7aef-3cbd-99e3-b4015aade418-thumb.jpg' class='magplus' title='点击查看原始大小图片' /></a></li>
+          
+          <li>大小: 82 KB</li>
+        </ul>
+      
+    
+      
+        <ul style="display:none;">
+          <li><a href="http://dl.iteye.com/upload/attachment/0084/5397/c16ef51c-d034-349f-9720-d17463d64e4f.jpg" target="_blank"><img src='http://dl.iteye.com/upload/attachment/0084/5397/c16ef51c-d034-349f-9720-d17463d64e4f-thumb.jpg' class='magplus' title='点击查看原始大小图片' /></a></li>
+          
+          <li>大小: 20.8 KB</li>
+        </ul>
+      
+    
+      
+        <ul style="display:none;">
+          <li><a href="http://dl.iteye.com/upload/attachment/0084/5403/b7eed7ba-79ee-31bf-9aaf-c8adae044e45.jpg" target="_blank"><img src='http://dl.iteye.com/upload/attachment/0084/5403/b7eed7ba-79ee-31bf-9aaf-c8adae044e45-thumb.jpg' class='magplus' title='点击查看原始大小图片' /></a></li>
+          
+          <li>大小: 26.1 KB</li>
+        </ul>
+      
+    
+    
+      <ul>
+        <li><a href="#" onclick="$$('div.attachments ul').invoke('show');$(this).up(1).hide();return false;">查看图片附件</a></li>
+      </ul></html>
